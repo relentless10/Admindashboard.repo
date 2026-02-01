@@ -1,0 +1,122 @@
+body{
+  background-color: lightgrey;
+}
+.header{
+  background-color: white;
+}
+
+.dashboard{
+  background-color: #1992d4;
+  color: white;
+}
+
+
+.site{
+  background-color: white;
+}
+
+.trends{
+  background-color: white;
+}
+
+
+
+.container{
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.dashboard{
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  padding: 20px;
+}
+
+.header{
+  grid-column:2/3 ;
+  grid-row: 1/2;
+  padding: 20px;
+}
+
+.main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e5e7eb;
+  padding: 30px;
+  gap: 25px;
+}
+
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.supercool, .impossibleapp, .adblocker,
+.lesscool, .easypeasy, .moneymaker {
+  background-color: white;
+  border-left: 10px solid orange;
+  padding: 20px;  /* Add padding inside cards */
+  border-radius: 8px;  /* Curved corners */
+}
+
+
+.site, .trends{
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.update{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+.site, .trends {
+  margin-top: 15px;
+}
+
+.site h3, .trends p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.site p, .trends p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #6b7280;
+}
+
+.site hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 15px 0;
+}
+
+.site{
+  min-height: 500px;
+}
+.trends{
+  min-height: 300px; 
+}
+
+
+.trends p {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 15px 0;
+  margin: 0;
+  font-weight: 600
+}
+
+.trends p::first-line {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
